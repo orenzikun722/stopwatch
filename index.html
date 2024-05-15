@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <center>
+      <p id="time">
+      <button onclick="start()" id="start">start</button>
+      <button onclick="stop()" id="stop">stop</button>
+      <button onclick="reset()" id="reset">reset</button>
+    </center>
+    <script type="text/javascript">
+      var stats = 0;
+      
+      function start() {
+        document.getElementById('start').disable = true;
+        document.getElementById('stop').disable = false;
+        document.getElementById('reset').disable = true;
+      }
+      
+      function stop() {
+        document.getElementById('start').disable = false;
+        document.getElementById('stop').disable = true;
+        document.getElementById('reset').disable = false;
+      }
+      
+      function reset() {
+        document.getElementById('start').disable = true;
+        document.getElementById('stop').disable = false;
+        document.getElementById('reset').disable = true;
+      }
+
+    </script>
+  </body>
+</html>
