@@ -4,12 +4,13 @@
   </head>
   <body>
     <center>
-      <p id="time">
+      <p id="time">Please enable JavaScript</p>
       <button onclick="start()" id="start">start</button>
       <button onclick="stop()" id="stop">stop</button>
       <button onclick="reset()" id="reset">reset</button>
     </center>
     <script type="text/javascript">
+      document.getElememtById('time').innerText = '00:00:00.000';
       var stats = 0;
       
       function start() {
